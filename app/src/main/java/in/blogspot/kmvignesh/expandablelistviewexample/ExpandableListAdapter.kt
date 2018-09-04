@@ -10,7 +10,7 @@ import android.widget.TextView
 import android.widget.Toast
 
 /**
- * Created by VickY on 2018-02-24.
+ * Modified by Michael Oki on 4th September,2018.
  */
 
 class ExpandableListAdapter(var context: Context,var expandableListView : ExpandableListView,var header : MutableList<String>, var body : MutableList<MutableList<String>>) : BaseExpandableListAdapter(){
