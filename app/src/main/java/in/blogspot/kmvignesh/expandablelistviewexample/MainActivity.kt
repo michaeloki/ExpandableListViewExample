@@ -12,8 +12,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        
+        val expListView = findViewById<ExpandableListView>(R.id.expandableListView)
 
-        title = "Game Of Thrones"
 
         val season1: MutableList<String> = ArrayList()
         season1.add("Winter is Coming")
@@ -126,8 +127,9 @@ class MainActivity : AppCompatActivity() {
         body.add(season4)
         body.add(season5)
         body.add(season6)
+        body.add(season7)
         body.add(special)
 
-        expandableListView.setAdapter(ExpandableListAdapter(this,expandableListView, header, body))
+        expListView!!.setAdapter(ExpandableListAdapter(this, expListView, header, body))
     }
 }
